@@ -3,19 +3,19 @@
 print("Ноль в качестве знака операции"
       "\nзавершит работу программы")
 while True:
-    s = input("Знак (+,-,*,/): ")
-    if s == '0':
+    user = input("Знак (+,-,*,/): ")
+    if user == '0':
         break
-    if s in ('+', '-', '*', '/'):
+    if user in ('+', '-', '*', '/'):
         x = float(input("Первое число = "))
         y = float(input("Второе число = "))
-        if s == '+':
+        if user == '+':
             print("%.2f" % (x+y))
-        elif s == '-':
+        elif user == '-':
             print("%.2f" % (x-y))
-        elif s == '*':
+        elif user == '*':
             print("%.2f" % (x*y))
-        elif s == '/':
+        elif user == '/':
             if y != 0:
                 print("%.2f" % (x/y))
             else:
